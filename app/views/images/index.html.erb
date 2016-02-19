@@ -39,12 +39,12 @@
 </head>
 <body>
 
-<div class="container" id='masonry' >
+<div id='masonry' >
 
-  <div ><img class="one-third item" src="/assets/1"  onclick="showImage(/assets/, '1.jpg');"/></div>
-  <div ><img class="one-third one-third-second item thumbnail" src="/assets/2" onclick="showImage(/assets/2, '2');" /></div>
-  <div ><img class="one-third one-third-last item" src="/assets/4" onclick="showImage(/assets/1, '1');"/></div>
-  <div><img class="one-third item medium" src="/assets/3" onclick="showImage(this.src, '3');"/></div>
+  <div ><img class="img-responsive one-third item" src="/assets/1"  onclick="showImage(/assets/, '1.jpg');"/></div>
+  <div ><img class="img-responsive one-third one-third-second item thumbnail" src="/assets/2" onclick="showImage(/assets/2, '2');" /></div>
+  <div ><img class="img-responsive one-third one-third-last item" src="/assets/4" onclick="showImage(/assets/1, '1');"/></div>
+  <div><img class="img-responsive one-third item medium" src="/assets/3" onclick="showImage(this.src, '3');"/></div>
   <div><img class="one-third one-third-second item" src="/assets/1" onclick="showImage(this.src, '9');"/></div>
   <div><img class="one-third one-third-last item medium"src="/assets/6" onclick="showImage(this.src, '1');"/></div>
   <div><img class="one-third item large" src="/assets/2" onclick="showImage(this.src, '2');"/></div>
@@ -100,7 +100,7 @@
 $(window).load(function(){
 var container = document.querySelector('#masonry');
 var msnry = new Masonry( container, {
-columnWidth: 50,
+columnWidth: '.item',
 itemSelector: '.item'
 });
 });
