@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 <head>
-  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-  <link rel="stylesheet" href="/assets/responsive.css" media="screen and (max-width: 900px)" title="no title" charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+<link rel="stylesheet" href="/assets/responsive.css" media="screen and (max-width: 900px)" charset="utf-8">
+
 </head>
 <h1>Listing Images</h1>
 
@@ -41,25 +44,25 @@
 
 <div id='masonry' >
 
-  <div ><img class="img-responsive one-third item" src="/assets/1"  onclick="showImage(/assets/, '1.jpg');"/></div>
-  <div ><img class="img-responsive one-third one-third-second item thumbnail" src="/assets/2" onclick="showImage(/assets/2, '2');" /></div>
-  <div ><img class="img-responsive one-third one-third-last item" src="/assets/4" onclick="showImage(/assets/1, '1');"/></div>
-  <div><img class="img-responsive one-third item medium" src="/assets/3" onclick="showImage(this.src, '3');"/></div>
-  <div><img class="one-third one-third-second item" src="/assets/1" onclick="showImage(this.src, '9');"/></div>
-  <div><img class="one-third one-third-last item medium"src="/assets/6" onclick="showImage(this.src, '1');"/></div>
-  <div><img class="one-third item large" src="/assets/2" onclick="showImage(this.src, '2');"/></div>
-  <div><img class="one-third one-third-second item" src="/assets/6" onclick="showImage(this.src, '6');"/></div>
-  <div><img class="one-third one-third-last item item medium" src="/assets/4" onclick="showImage(this.src, '7');"/></div>
-  <div><img class="one-third item medium"src="/assets/5" onclick="showImage(this.src, '8');"/></div>
-  <div><img class="one-third one-third-second item"src="/assets/1" onclick="showImage(this.src, '1');"/></div>
-  <div><img class="one-third one-third-last "src="/assets/4" onclick="showImage(this.src, '2');"/></div>
-  <div><img class="one-third item medium" src="/assets/3" /></div>
-  <div><img class="one-third one-third-second item medium" src="/assets/5" /></div>
-  <div><img class="one-third one-third-last item" src="/assets/6" /></div>
-  <div><img class=" one-third item thumbnail" src="/assets/1" /></div>
-  <div><img class=" one-third one-third-second item" src="/assets/1" /></div>
-  <div><img class="one-third one-third-last item" src="/assets/3" /></div>
-  <div><img class=" one-third item thumbnail" src="/assets/5" /></div>
+  <div><a href="assets/1.jpg" data-lightbox="1" data-title="My caption"><img class="one-third item" src="/assets/1"/></a></div>
+  <div><img class="one-third item" src="/assets/2"  /></div>
+  <div><img class="one-third item" src="/assets/4"/></div>
+  <div><img class="one-third item " src="/assets/3"/></div>
+  <div><img class="one-third item" src="/assets/1"/></div>
+  <div><img class="one-third item"src="/assets/6"/></div>
+  <div><img class="one-third item" src="/assets/2"/></div>
+  <div><img class="one-third item" src="/assets/6"/></div>
+  <div><img class="one-third item" src="/assets/4"/></div>
+  <div><img class="one-third item"src="/assets/5"/></div>
+  <div><img class="one-third item"src="/assets/1"/></div>
+  <div><img class="one-third item" src="/assets/4" /></div>
+  <div><img class="one-third item" src="/assets/3" /></div>
+  <div><img class="one-third item" src="/assets/5" /></div>
+  <div><img class="one-third item" src="/assets/6" /></div>
+  <div><img class="one-third item" src="/assets/1" /></div>
+  <div><img class="one-third item" src="/assets/1" /></div>
+  <div><img class="one-third item" src="/assets/3" /></div>
+  <div><img class="one-third item" src="/assets/5" /></div>
   <!-- <div class="item large"></div>
   <div class="item thumbnail"></div>
   <div class="item"></div>
@@ -98,10 +101,12 @@
 </div>
 <script>
 $(window).load(function(){
-var container = document.querySelector('#masonry');
-var msnry = new Masonry( container, {
-columnWidth: '.item',
-itemSelector: '.item'
-});
+  var container = document.querySelector('#masonry');
+  var msnry = new Masonry( container, {
+    columnWidth: '.item',
+    itemSelector: '.item'
+  });
 });
 </script>
+<script src="/assets/lightbox.js"></script>
+</body>

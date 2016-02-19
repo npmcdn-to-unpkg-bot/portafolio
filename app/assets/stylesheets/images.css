@@ -25,15 +25,6 @@ img {
 }
 
 
-/*.one-third {
-  width: 31%;
-  float: left;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-
-}*/
-
 .one-third-last {
   margin: 0;
 }
@@ -45,9 +36,9 @@ img {
   background: none;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 600px) {
   .one-third {
-    width: 33.33%;
+    width: 100%;
     float: left;
     margin: 0;
     padding: 0;
@@ -56,25 +47,24 @@ img {
 }
 
 
+
 @media screen and (max-width: 900px) {
   .one-third {
     width: 50%;
-  }
-
-  .one-third-last{
+    float: left;
     margin: 0;
+    padding: 0;
+    display: inline-block;
   }
 }
 
-
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1700px) {
   .one-third {
-    width: 100%;
+    width: 33.33%;
+    float: left;
+    margin: 0;
     padding: 0;
+    display: inline-block;
   }
 
-  .one-third-last{
-    margin: 0;
-  }
 }
