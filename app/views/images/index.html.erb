@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 <head>
-
+<script src="/assets/jquery.swipebox.js"></script>
+<link rel="stylesheet" href="/assets/swipebox.css">
+<link rel="stylesheet" href="/assets/animate.css">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 <link rel="stylesheet" href="/assets/responsive.css" media="screen and (max-width: 900px)" charset="utf-8">
@@ -31,82 +33,141 @@
 <br>
 
 <%= link_to 'New Image', new_image_path %>
-<p>
 
-</p>
-
-
-<style>
-
-</style>
 </head>
 <body>
 
-<div id='masonry' >
+<div id='masonry'>
+  <!-- <div class="picture"> -->
+      <a href="/assets/1.jpg" rel="gallery-1" class="swipebox ">
+        <img src="/assets/1.jpg" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/4.jpg" rel="gallery-1" class="swipebox ">
+        <img src="/assets/4.jpg" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/2" rel="gallery-1" class="swipebox ">
+        <img src="/assets/2" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/3" rel="gallery-1" class="swipebox">
+        <img src="/assets/3" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/4" rel="gallery-1" class="swipebox">
+        <img src="/assets/4" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/5" rel="gallery-1" class="swipebox">
+        <img src="/assets/5" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/6" rel="gallery-1" class="swipebox">
+        <img src="/assets/6" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/3" rel="gallery-1" class="swipebox">
+        <img src="/assets/3" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/2" rel="gallery-1" class="swipebox">
+        <img src="/assets/2" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/5" rel="gallery-1" class="swipebox">
+        <img src="/assets/5" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/4.jpg" rel="gallery-1" class="swipebox">
+        <img src="/assets/4.jpg" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/2" rel="gallery-1" class="swipebox">
+        <img src="/assets/2" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/3" rel="gallery-1" class="swipebox">
+        <img src="/assets/3" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/4" rel="gallery-1" class="swipebox">
+        <img src="/assets/4" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/5" rel="gallery-1" class="swipebox">
+        <img src="/assets/5" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/6" rel="gallery-1" class="swipebox">
+        <img src="/assets/6" class="one-third item" alt="Panda">
+      </a>
+      <a href="/assets/3" rel="gallery-1" class="swipebox">
+        <img src="/assets/3" class="one-third item" alt="Panda">
+      </a>
 
-  <div><a href="assets/1.jpg" data-lightbox="1" data-title="My caption"><img class="one-third item" src="/assets/1"/></a></div>
-  <div><img class="one-third item" src="/assets/2"  /></div>
-  <div><img class="one-third item" src="/assets/4"/></div>
-  <div><img class="one-third item " src="/assets/3"/></div>
-  <div><img class="one-third item" src="/assets/1"/></div>
-  <div><img class="one-third item"src="/assets/6"/></div>
-  <div><img class="one-third item" src="/assets/2"/></div>
-  <div><img class="one-third item" src="/assets/6"/></div>
-  <div><img class="one-third item" src="/assets/4"/></div>
-  <div><img class="one-third item"src="/assets/5"/></div>
-  <div><img class="one-third item"src="/assets/1"/></div>
-  <div><img class="one-third item" src="/assets/4" /></div>
-  <div><img class="one-third item" src="/assets/3" /></div>
-  <div><img class="one-third item" src="/assets/5" /></div>
-  <div><img class="one-third item" src="/assets/6" /></div>
-  <div><img class="one-third item" src="/assets/1" /></div>
-  <div><img class="one-third item" src="/assets/1" /></div>
-  <div><img class="one-third item" src="/assets/3" /></div>
-  <div><img class="one-third item" src="/assets/5" /></div>
-  <!-- <div class="item large"></div>
-  <div class="item thumbnail"></div>
-  <div class="item"></div>
-  <div class="item thumbnail"></div>
-  <div class="item"></div>
-  <div class="item medium"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item large"></div>
-  <div class="item medium"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item thumbnail"></div>
-  <div class="item"></div>
-  <div class="item thumbnail"></div>
-  <div class="item large"></div>
-  <div class="item large"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item medium"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div> -->
 
+  </div>
+
+<!-- </div> -->
+<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox();
+
+} )( jQuery );
+</script>
+<!-- <script src="/assets/lightbox.js"></script> -->
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button  class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
-<script>
-$(window).load(function(){
-  var container = document.querySelector('#masonry');
-  var msnry = new Masonry( container, {
-    columnWidth: '.item',
-    itemSelector: '.item'
-  });
-});
-</script>
-<script src="/assets/lightbox.js"></script>
 </body>
+<!-- <input id="clickMe" type="button" value="clickme" onclick="openGallery();" /> -->
