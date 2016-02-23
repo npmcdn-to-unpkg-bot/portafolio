@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 <head>
+<!--  -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="/assets/lo/src/css/lightcase.css"> -->
+
+<!-- <script type="text/javascript" src="/assets/lightcase.js"></script> -->
+<!--  -->
 <script src="/assets/jquery.swipebox.js"></script>
 <link rel="stylesheet" href="/assets/swipebox.css">
 <link rel="stylesheet" href="/assets/animate.css">
@@ -39,7 +45,7 @@
 
 <div id='masonry'>
   <!-- <div class="picture"> -->
-      <a href="/assets/1.jpg" rel="gallery-1" class="swipebox ">
+      <a href="/assets/1.jpg" rel="gallery-1" data-rel="lightcase">
         <img src="/assets/1.jpg" class="one-third item" alt="Panda">
       </a>
       <a href="/assets/4.jpg" rel="gallery-1" class="swipebox ">
@@ -101,6 +107,11 @@
 	$( '.swipebox' ).swipebox();
 
 } )( jQuery );
+//
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase();
+	});
+
 </script>
 <!-- <script src="/assets/lightbox.js"></script> -->
 <!-- Root element of PhotoSwipe. Must have class pswp. -->

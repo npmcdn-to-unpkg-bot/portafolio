@@ -1,0 +1,51 @@
+$lightcase-default: (
+  'font-path': '../fonts/',
+
+  'breakpoint': 641px,
+
+  'overlay-color': #333,
+
+  'case-background': #fff,
+  'case-background-media': #333,
+
+  'icon-font-size': 38px,
+  'icon-color': rgba(255, 255, 255, 0.6),
+  'icon-color-hover': rgba(255, 255, 255, 1),
+
+  'title-font-size': 17px,
+  'title-color': #aaa,
+
+  'caption-font-size': 13px,
+  'caption-color': #aaa,
+
+  'sequenceInfo-font-size': 11px,
+  'sequenceInfo-color': #aaa,
+
+  'text-shadow': 0 0 10px rgba(0, 0, 0, 0.5),
+  'text-color-viewport-small': #aaa,
+  'text-color-viewport-large': #333
+);
+
+$lightcase-custom: ()!default;
+$lightcase-settings: map-merge($lightcase-default, $lightcase-custom);
+#lightcase-case {
+  display: none;
+
+  position: fixed;
+  z-index: 2002;
+  top: 50%;
+  left: 50%;
+
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: #{map-get($lightcase-settings, 'text-shadow')};
+
+  // Not type: image, video, flash or error
+  &:not([data-lc-type=image]):not([data-lc-type=video]):not([data-lc-type=flash]):not([data-lc-type=error]) {
+    @media screen and (max-width: #{map-get($lightcase-settings, 'breakpoint')-1}) {
+      @include clear(true);
+    }
+  }
+}

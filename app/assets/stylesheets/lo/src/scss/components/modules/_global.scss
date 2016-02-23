@@ -1,0 +1,57 @@
+// Styles and overrides for all elements out of the lightcase scope
+$lightcase-default: (
+  'font-path': '../fonts/',
+
+  'breakpoint': 641px,
+
+  'overlay-color': #333,
+
+  'case-background': #fff,
+  'case-background-media': #333,
+
+  'icon-font-size': 38px,
+  'icon-color': rgba(255, 255, 255, 0.6),
+  'icon-color-hover': rgba(255, 255, 255, 1),
+
+  'title-font-size': 17px,
+  'title-color': #aaa,
+
+  'caption-font-size': 13px,
+  'caption-color': #aaa,
+
+  'sequenceInfo-font-size': 11px,
+  'sequenceInfo-color': #aaa,
+
+  'text-shadow': 0 0 10px rgba(0, 0, 0, 0.5),
+  'text-color-viewport-small': #aaa,
+  'text-color-viewport-large': #333
+);
+
+$lightcase-custom: ()!default;
+$lightcase-settings: map-merge($lightcase-default, $lightcase-custom);
+.lightcase-open {
+
+  body {
+    // For mobile (touch) devices
+    .lightcase-isMobileDevice & {
+      max-width: 100%;
+      max-height: 100%;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: #{map-get($lightcase-settings, 'breakpoint')-1}) {
+      padding: 55px 0 70px 0;
+
+      & > *:not([id*='lightcase-']) {
+        position: fixed !important;
+        top: -9999px !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        overflow: hidden !important;
+      }
+    }
+  }
+
+}

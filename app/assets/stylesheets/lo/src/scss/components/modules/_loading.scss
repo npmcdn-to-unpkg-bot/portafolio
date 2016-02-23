@@ -1,0 +1,55 @@
+$lightcase-default: (
+  'font-path': '../fonts/',
+
+  'breakpoint': 641px,
+
+  'overlay-color': #333,
+
+  'case-background': #fff,
+  'case-background-media': #333,
+
+  'icon-font-size': 38px,
+  'icon-color': rgba(255, 255, 255, 0.6),
+  'icon-color-hover': rgba(255, 255, 255, 1),
+
+  'title-font-size': 17px,
+  'title-color': #aaa,
+
+  'caption-font-size': 13px,
+  'caption-color': #aaa,
+
+  'sequenceInfo-font-size': 11px,
+  'sequenceInfo-color': #aaa,
+
+  'text-shadow': 0 0 10px rgba(0, 0, 0, 0.5),
+  'text-color-viewport-small': #aaa,
+  'text-color-viewport-large': #333
+);
+
+$lightcase-custom: ()!default;
+$lightcase-settings: map-merge($lightcase-default, $lightcase-custom);
+#lightcase-loading {
+  @include icon(#fff);
+
+  position: fixed;
+  z-index: 2001;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+
+  opacity: 1;
+
+  font-size: 32px;
+
+  text-shadow: 0 0 15px #fff;
+
+  // Fixes the icon wobble issue in firefox
+  -moz-transform-origin: 50% 53%;
+
+  -webkit-animation: lightcase-spin 0.5s infinite linear;
+  -moz-animation: lightcase-spin 0.5s infinite linear;
+  -o-animation: lightcase-spin 0.5s infinite linear;
+  animation: lightcase-spin 0.5s infinite linear;
+}
