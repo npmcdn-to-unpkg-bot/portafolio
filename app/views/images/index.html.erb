@@ -1,10 +1,8 @@
 <p id="notice"><%= notice %></p>
 <head>
 <!--  -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- <link rel="stylesheet" href="/assets/lo/src/css/lightcase.css"> -->
-
-<!-- <script type="text/javascript" src="/assets/lightcase.js"></script> -->
+<link rel="stylesheet" href="/assets/venobox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/assets/venobox.js"></script>
 <!--  -->
 <script src="/assets/jquery.swipebox.js"></script>
 <link rel="stylesheet" href="/assets/swipebox.css">
@@ -45,25 +43,25 @@
 
 <div id='masonry'>
   <!-- <div class="picture"> -->
-      <a href="/assets/1.jpg" rel="gallery-1" data-rel="lightcase">
+      <a class="venobox" href="/assets/1.jpg" data-gall="myGallery">
         <img src="/assets/1.jpg" class="one-third item" alt="Panda">
       </a>
-      <a href="/assets/4.jpg" rel="gallery-1" class="swipebox ">
+      <a href="/assets/4.jpg" class="venobox" data-gall="myGallery" >
         <img src="/assets/4.jpg" class="one-third item" alt="Panda">
       </a>
-      <a href="/assets/2" rel="gallery-1" class="swipebox ">
+      <a href="/assets/2" class="venobox" data-gall="myGallery">
         <img src="/assets/2" class="one-third item" alt="Panda">
       </a>
-      <a href="/assets/3" rel="gallery-1" class="swipebox">
+      <a href="/assets/3" class="venobox" data-gall="myGallery">
         <img src="/assets/3" class="one-third item" alt="Panda">
       </a>
-      <a href="/assets/4" rel="gallery-1" class="swipebox">
+      <a href="/assets/4" class="venobox" data-gall="myGallery">
         <img src="/assets/4" class="one-third item" alt="Panda">
       </a>
-      <a href="/assets/5" rel="gallery-1" class="swipebox">
+      <a href="/assets/5" class="venobox" data-gall="myGallery">
         <img src="/assets/5" class="one-third item" alt="Panda">
       </a>
-      <a href="/assets/6" rel="gallery-1" class="swipebox">
+      <a href="/assets/6" class="venobox" data-gall="myGallery">
         <img src="/assets/6" class="one-third item" alt="Panda">
       </a>
       <a href="/assets/3" rel="gallery-1" class="swipebox">
@@ -109,7 +107,25 @@
 } )( jQuery );
 //
 	jQuery(document).ready(function($) {
-		$('a[data-rel^=lightcase]').lightcase();
+
+    /* default settings */
+    $('.venobox').venobox();
+
+
+    /* custom settings */
+    $('.venobox_custom').venobox({
+        framewidth: '400px',        // default: ''
+        frameheight: '300px',       // default: ''
+        border: '10px',             // default: '0'
+        bgcolor: '#5dff5e',         // default: '#fff'
+        titleattr: 'data-title',    // default: 'title'
+        numeratio: true,            // default: false
+        infinigall: true            // default: false
+    });
+
+    /* auto-open #firstlink on page load */
+    $("#firstlink").venobox().trigger('click');
+	// 	$('a[data-rel^=lightcase]').lightcase();
 	});
 
 </script>
