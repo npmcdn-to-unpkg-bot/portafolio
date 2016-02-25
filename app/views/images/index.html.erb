@@ -44,8 +44,8 @@
 
 <div id='masonry'>
   <!-- <div class="picture"> -->
-      <a rel="gallery-1" class="swipebox" href="/assets/1.jpg" >
-        <img src="/assets/1.jpg" class="one-third item" alt="Panda">
+      <a rel="gallery-1" class="swipebox" title="Cool panda" href="/assets/1.jpg" >
+        <img src="/assets/1.jpg" class="one-third item" >
       </a>
       <a href="/assets/4.jpg" rel="gallery-1" class="swipebox" >
         <img src="/assets/4.jpg" class="one-third item" alt="Panda">
@@ -107,6 +107,10 @@
 
 } )( jQuery );
 //
+$(function() {
+$('.one-third').each(function(i) {
+$(this).delay((i++) * 200).fadeTo(3000, 1); })
+});
 	jQuery(document).ready(function($) {
 
     /* default settings */
@@ -127,10 +131,11 @@
     /* auto-open #firstlink on page load */
     $("#firstlink").venobox().trigger('click');
 	// 	$('a[data-rel^=lightcase]').lightcase();
+
 	});
 
 </script>
 
-<
+
 </body>
 <!-- <input id="clickMe" type="button" value="clickme" onclick="openGallery();" /> -->
