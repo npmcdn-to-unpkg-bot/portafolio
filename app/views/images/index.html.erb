@@ -15,35 +15,17 @@
 </head>
 <h1>Listing Images</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div id='masonry'>
 
-  <tbody>
-    <% @images.each do |image| %>
-      <tr>
-        <td><%= image.name %></td>
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<% @images.each do |image| %>
+<%= link_to image.image_url.to_s, class: "swipebox", rel: "gallery-1", title: image.name do %>
+    <%= image_tag image.image_url.to_s, :class => "one-third item" %>
     <% end %>
-  </tbody>
-</table>
+<% end %>
 
-<br>
 
-<%= link_to 'New Image', new_image_path %>
-
-</head>
 <body>
 
-<div id='masonry'>
-  <!-- <div class="picture"> -->
       <a rel="gallery-1" class="swipebox" title="Cool panda" href="/assets/1.jpg" >
         <img src="/assets/1.jpg" class="one-third item" >
       </a>
@@ -99,43 +81,13 @@
 
   </div>
 
-<!-- </div> -->
 <script type="text/javascript">
 ;( function( $ ) {
 
 	$( '.swipebox' ).swipebox();
 
 } )( jQuery );
-//
-$(function() {
-$('.one-third').each(function(i) {
-$(this).delay((i++) * 200).fadeTo(3000, 1); })
-});
-	jQuery(document).ready(function($) {
-
-    /* default settings */
-    $('.venobox').venobox();
-
-
-    /* custom settings */
-    $('.venobox_custom').venobox({
-        framewidth: '400px',        // default: ''
-        frameheight: '300px',       // default: ''
-        border: '10px',             // default: '0'
-        bgcolor: '#5dff5e',         // default: '#fff'
-        titleattr: 'data-title',    // default: 'title'
-        numeratio: true,            // default: false
-        infinigall: true            // default: false
-    });
-
-    /* auto-open #firstlink on page load */
-    $("#firstlink").venobox().trigger('click');
-	// 	$('a[data-rel^=lightcase]').lightcase();
-
-	});
-
 </script>
 
 
 </body>
-<!-- <input id="clickMe" type="button" value="clickme" onclick="openGallery();" /> -->

@@ -3,6 +3,7 @@
 <p>
   <strong>Name:</strong>
   <%= @image.name %>
+  <%= image_tag @image.image_url.to_s, :class => "one-third item" %>
 </p>
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
