@@ -2,12 +2,12 @@
 <head>
 <!--  -->
 <link rel="stylesheet" href="/assets/venobox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/assets/venobox.js"></script>
+<!-- <script type="text/javascript" src="/assets/venobox.js"></script> -->
 <!--  -->
-<script type="text/javascript" src="/assets/venobox.js"></script>
+<!-- <script type="text/javascript" src="/assets/venobox.js"></script> -->
 <script src="/assets/jquery.swipebox.js"></script>
 <link rel="stylesheet" href="/assets/swipebox.css">
-<link rel="stylesheet" href="/assets/animate.css">
+<!-- <link rel="stylesheet" href="/assets/animate.css"> -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 <link rel="stylesheet" href="/assets/responsive.css" media="screen and (max-width: 900px)" charset="utf-8">
@@ -18,8 +18,14 @@
 <div id='masonry'>
 
 <% @images.each do |image| %>
+
+<div class="hovereffect">
 <%= link_to image.image_url.to_s, class: "swipebox", rel: "gallery-1", title: image.name do %>
     <%= image_tag image.image_url.to_s, :class => "one-third item" %>
+    <div class="overlay">
+     <h2><%=image.name%></h2>
+    </div>
+</div>
     <% end %>
 <% end %>
 
@@ -29,7 +35,7 @@
       <a rel="gallery-1" class="swipebox" title="Cool panda" href="/assets/1.jpg" >
         <img src="/assets/1.jpg" class="one-third item" >
       </a>
-      <a href="/assets/4.jpg" rel="gallery-1" class="swipebox" >
+      <a href="/assets/4.jpg" rel="gallery-1" class="hello swipebox" >
         <img src="/assets/4.jpg" class="one-third item" alt="Panda">
       </a>
       <a href="/assets/2" rel="gallery-1" class="swipebox">
@@ -78,14 +84,25 @@
         <img src="/assets/3" class="one-third item" alt="Panda">
       </a>
 
+      <a href="/assets/1" rel="gallery-1" class="swipebox image">
+      	<img src="/assets/1" class="one-third item" alt="Panda">
+      </a>
 
   </div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <div class="hovereffect">
+          <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+          <div class="overlay">
+             <h2>Hover effect 1</h2>
+             <a class="info" href="#">link here</a>
+          </div>
+      </div>
+</div>
+
 
 <script type="text/javascript">
 ;( function( $ ) {
-
 	$( '.swipebox' ).swipebox();
-
 } )( jQuery );
 </script>
 

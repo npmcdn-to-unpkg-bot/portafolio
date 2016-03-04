@@ -1,6 +1,5 @@
 
 var masonry = function() {
-
   var container = document.querySelector('#masonry');
     var msnry = new Masonry( container, {
       columnWidth: '.item',
@@ -13,8 +12,6 @@ var masonry = function() {
 
 $(window).load(function() {
   masonry();
-
-
-
+  
 
 });
