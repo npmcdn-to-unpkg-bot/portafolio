@@ -2,7 +2,6 @@
 <head>
 
 <script src="/assets/jquery.swipebox.js"></script>
-<script src="/assets/jquery.contenthover.js"></script>
 <link rel="stylesheet" href="/assets/swipebox.css">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
@@ -15,18 +14,19 @@
 <div id='masonry'>
 
 <% @images.each do |image| %>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    <%= link_to image.image_url.to_s,class: "swipebox" do %>
-    <div class="hovereffect">
-        <%= image_tag image.image_url.to_s, :class => "img-responsive" %><!-- quite el item class -->
+  <%= link_to image.image_url.to_s,class: "swipebox" do %>
+    <div class="hov col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+        <%= image_tag image.image_url.to_s, :class => "img-responsive" %>
         <div class="overlay">
-           <h2>Hover effect 1</h2>
+           <h2><%= image.name %></h2>
         </div>
       </div>
     </div>
   <% end %>
 <% end %>
 
+<!-- <# link_to image_tag(image.images_url.to_s), image.images_url.to_s %> -->
 
 </div>
 <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
