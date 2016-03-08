@@ -1,18 +1,10 @@
 
- * {
-   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
  }
 
-
- .thumbnail {
-   border: none;
- }
-
- .thumbnail {
-   background: none;
- }
  div#masonry {
    margin-left: auto;
    margin-right: auto;
@@ -22,7 +14,6 @@
  img {
    max-width: 100%;
    height: auto;
-
  }
 
 
@@ -34,72 +25,27 @@
    background: none;
  }
 
- @media screen and (max-width: 600px) {
-   .one-third {
-     width: 100%;
-     float: left;
-     margin: 0;
-     padding: 0;
-     display: inline-block;
-   }
- }
-
-
-
- @media screen and (max-width: 900px) {
-  /*.overlay {
-    width: 50%;
-   }*/
-   .one-third {
-     width: 50%;
-     float: left;
-     margin: 0;
-     padding: 0;
-     display: inline-block;
-   }
- }
 
  @media screen and (max-width: 1700px) {
-   .overlay{
-     overflow: auto;
-   }
-
-   /*.hovereffect {
-
-   }*/
-
-   .hovereffect .overlay {
-  /*overflow: auto;*/
-   width:33.33%;
-   height:300px;
-   position:absolute;
-   overflow:hidden;
-   top:0;
-   left:0;
-   opacity:0;
-   background-color:rgba(0,0,0,0.5);
-   -webkit-transition:all .8s ease-in-out;
-   transition:all .8s ease-in-out
-   }
 
    .one-third {
+     /*box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);*/
      width: 33.33%;
      float: left;
      margin: 0;
      padding: 0;
      display: inline-block;
+
    }
 
  }
 
-
-
- .one-third{
-    -webkit-animation: fadein 2s;
-       -moz-animation: fadein 2s;
-        -ms-animation: fadein 2s;
-         -o-animation: fadein 2s;
-            animation: fadein 2s;
+.one-third{
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
  }
 
  @keyframes fadein {
@@ -131,40 +77,55 @@
  }
 
 
+/*hasta aca*/
 .hovereffect {
+  float: left;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 width:100%;
 height:100%;
-float:left;
+/*float:left;*/
 overflow:hidden;
 position:relative;
 text-align:center;
 cursor:default;
 }
 
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
 .hovereffect img {
 display:block;
 position:relative;
--webkit-transition:all .8s linear;
-transition:all .8s linear;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
 }
 
 .hovereffect h2 {
-  padding-top: 25%;
-  padding-bottom: 25%;
 text-transform:uppercase;
 color:#fff;
 text-align:center;
 position:relative;
 font-size:17px;
--webkit-transition:all .8s ease-in-out;
-transition:all .8s ease-in-out
-
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
 }
-
-/*h2 {
-  padding-top: 45%;
-  padding-bottom: 45%;
-}*/
 
 .hovereffect a.info {
 text-decoration:none;
@@ -186,9 +147,9 @@ box-shadow:0 0 5px #fff;
 }
 
 .hovereffect:hover img {
--ms-transform:scale(1.1);
--webkit-transform:scale(1.1);
-transform:scale(1.1);
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
 }
 
 .hovereffect:hover .overlay {
@@ -210,10 +171,11 @@ transition-delay:.2s;
 }
 
 
-/*.col-lg-3 {
-padding: 0;
-}
+.col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
+  padding: 0;
+  /*float: left;
+  margin: 0;
+  padding: 0;
+  display: inline-block;*/
 
-.col-md-4 {
-  padding:0;
-}*/
+}
