@@ -99,8 +99,8 @@ top:0;
 left:0;
 opacity:0;
 background-color:rgba(0,0,0,0.3);
--webkit-transition:all .9s ease-in-out;
-transition:all .9s ease-in-out
+-webkit-transition:all .7s ease-in-out;
+transition:all .7s ease-in-out
 }
 
 .hovereffect img {
@@ -168,4 +168,8 @@ transition-delay:.2s;
 
 .col-lg-4, .col-md-4, .col-sm-6, .col-xs-12 {
   padding: 0;
+}
+
+.navbar-default {
+  border-color: transparent;
 }

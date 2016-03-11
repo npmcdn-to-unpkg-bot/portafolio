@@ -1,36 +1,11 @@
 
-@media only screen and (max-width: 800px) {
-  .overlay {
-    display: none;
-  }
-
-  .hovereffect:hover img {
-    -ms-transform: none;
-    -webkit-transform:none;
-    transform:none;
-  }
-
-  .hovereffect:hover .overlay {
-    opacity:0;
-    filter:none;
-  }
-
-  .one-third {
-    width: 50%;
-    float: left;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
-
-  .hovereffect .overlay {
-    width:50%;
-  }
 
 @media only screen and (max-width: 500px) {
 
-  .overlay {
-    display: none;
+  .navbar-nav {
+    float: left;
+    padding-left: 25px;
+
   }
 
   .hovereffect:hover img {

@@ -4,46 +4,33 @@
 <script src="/assets/jquery.swipebox.js"></script>
 <link rel="stylesheet" href="/assets/swipebox.css">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+
 <link rel="stylesheet" href="/assets/responsive.css" media="screen and (max-width: 900px)" charset="utf-8">
 
 </head>
 <body>
 <h1>Listing Images</h1>
-<!-- hasta aca -->
-<div id='masonry'>
 
-<% @images.each do |image| %>
-  <%= link_to image.image_url.to_s,class: "swipebox" do %>
-    <div class="hov col-lg-4 col-md-4 col-sm-6 col-xs-12">
-      <div class="hovereffect">
-        <%= image_tag image.image_url.to_s, :class => "img-responsive" %>
-        <div class="overlay">
-           <h2><%= image.name %></h2>
+<div id='masonry'>
+  <% @images.each do |image| %>
+    <%= link_to image.image_url.to_s,class: "swipebox" do %>
+      <div class="hov col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <%= image_tag image.image_url.to_s, :class => "img-responsive" %>
+          <div class="overlay">
+            <h2><%= image.name %></h2>
+          </div>
         </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
-<% end %>
-
-<!-- <# link_to image_tag(image.images_url.to_s), image.images_url.to_s %> -->
-
 </div>
-<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-    <div class="hovereffect">
-        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-        <div class="overlay">
-           <h2>Hover effect 1</h2>
-           <a class="info" href="#">link here</a>
-        </div>
-    </div>
-</div> -->
-<!--  -->
+
 <script type="text/javascript">
 ;( function( $ ) {
 	$( '.swipebox' ).swipebox();
 } )( jQuery );
 </script>
-
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 
 </body>

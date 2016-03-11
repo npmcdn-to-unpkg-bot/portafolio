@@ -28,8 +28,8 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-slider {
-  -webkit-transition: -webkit-transform 0.4s ease;
-          transition: transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.7s ease;
+          transition: transform 0.7s ease;
   height: 100%;
   left: 0;
   top: 0;
@@ -94,8 +94,8 @@ html.swipebox-html.swipebox-touch {
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
-  -webkit-transition: 0.5s;
-          transition: 0.5s;
+  -webkit-transition: 0.7s;
+          transition: 0.7s;
   position: absolute;
   left: 0;
   z-index: 999;
@@ -173,19 +173,19 @@ html.swipebox-html.swipebox-touch {
 }
 
 .swipebox-no-touch #swipebox-overlay.rightSpring #swipebox-slider {
-  -webkit-animation: rightSpring 0.3s;
-          animation: rightSpring 0.3s;
+  -webkit-animation: rightSpring 0.6s;
+          animation: rightSpring 0.6s;
 }
 .swipebox-no-touch #swipebox-overlay.leftSpring #swipebox-slider {
-  -webkit-animation: leftSpring 0.3s;
-          animation: leftSpring 0.3s;
+  -webkit-animation: leftSpring 0.6s;
+          animation: leftSpring 0.6s;
 }
 
 .swipebox-touch #swipebox-container:before, .swipebox-touch #swipebox-container:after {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: all .3s ease;
-          transition: all .3s ease;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
   content: ' ';
   position: absolute;
   z-index: 999;
@@ -277,7 +277,7 @@ html.swipebox-html.swipebox-touch {
 /* Skin
 --------------------------*/
 #swipebox-overlay {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
 }
 
 #swipebox-bottom-bar,
