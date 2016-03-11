@@ -6,7 +6,6 @@ var masonry = function() {
   var msnry = new Masonry( container, {
     columnWidth: '.hov',
     itemSelector: '.hov'
-
   });
 };
 
@@ -14,6 +13,3 @@ var masonry = function() {
 $(window).load(function() {
   masonry();
 });
-
-
- // hasta aca
