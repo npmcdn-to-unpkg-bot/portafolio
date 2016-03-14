@@ -1,38 +1,21 @@
 
 
 
-// var masonry = function() {
-
-// };
-
-
-
-$(document).ready(function() {
-
-$(window).load(function() {
-  // masonry();
-  var container = document.querySelector('#masonry');
-   var msnry = new Masonry( container, {
-     columnWidth: '.hov',
-     itemSelector: '.hov'
-   });
+var masonry = function() {
+var container = document.querySelector('#masonry');
+ var msnry = new Masonry( container, {
+   columnWidth: '.hov',
+   itemSelector: '.hov'
+ });
+};
 
 
 
+// $(document).ready(function() {
 
-  // var $container = $('#masonry');
-// $container.imagesLoaded( function(){
-//     var msnry = new Masonry( $container[0], {
-//         columnWidth: '.hov',
-//         itemSelector: '.hov'
+// $(window).load(function() {
+//   masonry();
+//
+//
 //     });
 // });
-
-////////////////////////////////////
-// $container.imagesLoaded( function(){
-//         $container.masonry({
-//             columnWidth: '.hov',
-//             itemSelector: '.hov'
-//         });
-    });
-});
