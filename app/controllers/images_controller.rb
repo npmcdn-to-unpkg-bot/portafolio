@@ -10,9 +10,9 @@ class ImagesController < ApplicationController
   # end
 
   #
-  # def new
-  #   @image = Image.new
-  # end
+  def new
+    @image = Image.new
+  end
 
 
   # def edit
@@ -45,7 +45,7 @@ class ImagesController < ApplicationController
   #   end
   # end
 
-  # 
+  #
   # def destroy
   #   @image.destroy
   #   respond_to do |format|
