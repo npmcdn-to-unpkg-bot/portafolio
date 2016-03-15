@@ -25,20 +25,25 @@
     <% end %>
   <% end %>
 </div>
-
-
-<!-- <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script> -->
 <script src="/assets/masonry.pkgd.min.js"></script>
-</body>
 <script type="text/javascript">
-$(window).load(function() {
+var masonry = function () {
   var container = document.querySelector('#masonry');
    var msnry = new Masonry( container, {
      columnWidth: '.hov',
      itemSelector: '.hov'
    });
+ };
+$(window).load(function(){
+  $(document).ready(function() {
+    masonry();
   });
+});
+
 ;( function( $ ) {
 	$( '.swipebox' ).swipebox();
 } )( jQuery );
 </script>
+<!-- <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script> -->
+
+</body>
