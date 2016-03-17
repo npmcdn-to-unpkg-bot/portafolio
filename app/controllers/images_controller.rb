@@ -6,8 +6,8 @@ class ImagesController < ApplicationController
     @images = Image.all
   end
 
-  # def show
-  # end
+  def show
+  end
 
   #
   def new

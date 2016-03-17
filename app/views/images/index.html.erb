@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 <head>
 
-<script src="/assets/jquery.swipebox.js"></script>
-<link rel="stylesheet" href="/assets/swipebox.css">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<link rel="stylesheet" href="/assets/responsive.css" media="screen and (max-width: 900px)" charset="utf-8">
 
 </head>
 <body>
@@ -25,7 +20,8 @@
     <% end %>
   <% end %>
 </div>
-<script src="/assets/masonry.pkgd.min.js"></script>
+<!-- <script src="/assets/masonry.pkgd.min.js"></script> -->
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 <script type="text/javascript">
 var masonry = function () {
   var container = document.querySelector('#masonry');
@@ -39,7 +35,6 @@ $(window).load(function(){
     masonry();
   });
 });
-
 ;( function( $ ) {
 	$( '.swipebox' ).swipebox();
 } )( jQuery );
