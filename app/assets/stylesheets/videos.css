@@ -1,1 +1,32 @@
+ul .videos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.videos {
+  padding: 0;
+}
+li {
+    display: inline;
+}
+.videos-gal {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.videos-gal ul li {
+  display:inline-block;
+
+}
+/*.ytp-icon .ytp-icon-large-play-button {
+  display: none;
+}*/
+.videos {
+  -webkit-animation: fadein 5s !important;
+  -moz-animation: fadein 5s !important;
+  -ms-animation: fadein 5s !important;
+  -o-animation: fadein 5s !important;
+  animation: fadein 5s !important;
+ }

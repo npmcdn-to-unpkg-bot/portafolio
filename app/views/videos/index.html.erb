@@ -1,29 +1,26 @@
 <p id="notice"><%= notice %></p>
-
+<head>
+<script src="/assets/videos.js"></script>
+<link rel="stylesheet" href="/assets/videos.css" >
+</head>
 <h1>Listing Videos</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="videos-gal">
 
-  <tbody>
-    <% @videos.each do |video| %>
-      <tr>
-        <td><%= video.name %></td>
-        <td><iframe width="560" height="315" src= <%=video.url%>  frameborder="0" allowfullscreen></iframe></td>
-        <td><%= link_to 'Show', video %></td>
-        <td><%= link_to 'Edit', edit_video_path(video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<ul class="videos">
+  <% arr = [] %>
+  <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> -->
+  <% @videos.each do |video| %>
+    <% arr.push(video.url) %>
     <% end %>
-  </tbody>
-</table>
+    <% @videos.each_index do |i| %>
+      <li class="ind-vid"><div id="player<%=i%>"></div></li>
+    <% end %>
 
-<br>
+          <%= javascript_tag do %>
+            window.ids = "<%= arr %>"
+              <% end %>
 
-<%= link_to 'New Video', new_video_path %>
+    <!-- </div> -->
+</ul>
+</div>
