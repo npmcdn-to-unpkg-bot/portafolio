@@ -5,22 +5,19 @@
 </head>
 <h1>Listing Videos</h1>
 
-<div class="videos-gal">
-
-<ul class="videos">
-  <% arr = [] %>
-  <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> -->
-  <% @videos.each do |video| %>
-    <% arr.push(video.url) %>
-    <% end %>
+  <div class="videos-gal">
+    <ul class="videos">
+    <% arr = [] %>
+      <% @videos.each do |video| %>
+        <% arr.push(video.url) %>
+      <% end %>
     <% @videos.each_index do |i| %>
-      <li class="ind-vid"><div id="player<%=i%>"></div></li>
+      <li class="ind-vid">
+        <div id="player<%=i%>"></div>
+      </li>
     <% end %>
-
-          <%= javascript_tag do %>
-            window.ids = "<%= arr %>"
-              <% end %>
-
-    <!-- </div> -->
-</ul>
-</div>
+      <%= javascript_tag do %>
+        window.ids = "<%= arr %>"
+      <% end %>
+    </ul>
+  </div>
