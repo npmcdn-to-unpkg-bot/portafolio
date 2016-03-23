@@ -18,7 +18,6 @@
  border-color: transparent;
  border-bottom-width: 0px;
  margin-bottom: 0px;
- /*margin-left: 15px;*/
  }
 
 
@@ -30,11 +29,7 @@ body {
   padding: 0;
 }
 
-.container {
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-}
+
 
 .navbar-nav {
   float: right;
@@ -44,3 +39,82 @@ body {
   padding-left: 15px;
 
 }
+
+/**/
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body, html {
+  /*height: 100%;*/
+  /*background-color: #583e7e;*/
+}
+
+
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* VARIABLES */
+/* BASE */
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4; /*this may cause some issues for the fonts*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links, .nav-links-top {
+  color: #323333;
+}
+
+.container {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 20px;
+}
+
+.site-content {
+  /*padding-top: 55px;*/
+}
+
+/* HEADER */
+.header {
+  /*position: fixed;*/
+  /*left: 0;
+  right: 0;*/
+  height: 55px;
+  line-height: 55px;
+  background-color: auto;
+}
+
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: right;
+}
+
+/* MENU */
+.menu {
+  float: left;
+}
+.menu a {
+  padding: 0 10px;
+}
+.menu a:hover{
+  text-decoration: underline;
+  color: #323333;
+}
+/*.menu a:hover {
+  color: #c5cae9;
+}*/
+/*a:hover {
+
+}*/
