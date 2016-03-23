@@ -108,10 +108,10 @@ body {
 .menu a {
   padding: 0 10px;
 }
-.menu a:hover{
+/*.menu a:hover{
   text-decoration: underline;
   color: #323333;
-}
+}*/
 /*.menu a:hover {
   color: #c5cae9;
 }*/
