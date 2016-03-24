@@ -33,7 +33,7 @@
     position: static;
     height: 55px;
   }
-.nav-links:focus {
+.menu a:focus {
   border-left: 5px solid #323333;
 }
 .nav-links {
@@ -101,8 +101,9 @@
     font-size: large;
   }
   .menu a:hover{
-    text-decoration: none !important;
+    /*text-decoration: none !important;*/
     color: #323333 !important;
+    border-left: 5px solid #323333 !important;
   }
 
   .overlay-img {
