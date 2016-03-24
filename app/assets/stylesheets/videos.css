@@ -24,9 +24,9 @@ li {
   display: none;
 }*/
 .videos {
-  -webkit-animation: fadein 5s !important;
-  -moz-animation: fadein 5s !important;
-  -ms-animation: fadein 5s !important;
-  -o-animation: fadein 5s !important;
-  animation: fadein 5s !important;
+  -webkit-animation: fadein 3s !important;
+  -moz-animation: fadein 3s !important;
+  -ms-animation: fadein 3s !important;
+  -o-animation: fadein 3s !important;
+  animation: fadein 3s !important;
  }
