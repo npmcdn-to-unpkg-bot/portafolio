@@ -98,10 +98,10 @@
     line-height: 60px !important;
     font-size: large;
   }
-  /*.menu a:hover{
+  .menu a:hover{
     text-decoration: none !important;
     color: #323333 !important;
-  }*/
+  }
 
   .overlay {
     display: none;
