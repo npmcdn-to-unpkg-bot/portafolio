@@ -32,7 +32,9 @@
     </header>
     <div class="site-content">
       <div class="container">
+        <div class="log">
         <% if logged_in? %>
+
         <div class="">
           You are logged in
         </div>
@@ -43,11 +45,12 @@
         </div>
         <%= link_to "Log in", login_path %>
         <% end %>
+</div>
 
+      </div> <!-- END container -->
       <%= yield %>
       <%= debug(params) if Rails.env.development? %>
 
-      </div> <!-- END container -->
     </div> <!-- END site-content -->
     <div class="site-cache" id="site-cache"></div>
   </div> <!-- END site-pusher -->
