@@ -104,11 +104,11 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-bottom-bar {
-  bottom: -50px;
+  bottom: 0; /*it was -50px*/
 }
 #swipebox-bottom-bar.visible-bars {
-  -webkit-transform: translate3d(0, -50px, 0);
-          transform: translate3d(0, -50px, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 #swipebox-top-bar {

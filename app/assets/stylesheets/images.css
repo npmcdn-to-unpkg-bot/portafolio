@@ -169,6 +169,9 @@ transform:translatey(0);
 transition-delay:.2s;
 }
 
+.images-title {
+  text-align: center;
+}
 
 
 

@@ -6767,9 +6767,9 @@ button.close {
 .nav .navbar-nav {
   float: right;
 }
-.container {
+/*.container {
   margin: 15px !important;
-}
+}*/
 
 .hamb-middle, .hamb-top, .hamb-bottom {
   background-color: #323333 !important;
@@ -6782,7 +6782,7 @@ button.close {
   color: #323333 !important;
 }
 .container {
-  margin: 0 !important;
+  /*margin: 0 !important;*/
   padding: 0 !important;
   border: 0 !important;
   width: 100% !important;

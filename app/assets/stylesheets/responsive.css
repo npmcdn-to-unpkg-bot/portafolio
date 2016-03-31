@@ -1,10 +1,18 @@
-
-
+/*@media only screen and (max-width: 994px) {
+#left, #right {
+  display: none;
+}
+}*/
 @media only screen and (max-width: 769px) {
   /*new stye down*/
   .site-pusher,
   .site-container {
     height: 100%;
+  }
+  .container {
+    margin: 55px 0px 0px 0px !important;
+    padding: 0 !important;
+    border: 0 !important;
   }
 
   .site-container {
@@ -19,8 +27,9 @@
   }
 
   .site-content {
+    padding-top: 55px;
     position: absolute;
-    top: 55px;
+    top: 0; /*it was 55px*/
     right: 0;
     left: 0;
     bottom: 0;
@@ -30,8 +39,8 @@
   }
 
   .header {
-    position: static;
-    height: 55px;
+    /*position: static;*/
+    /*height: 55px;*/
   }
   .menu a:focus {
     border-left: 5px solid #323333;
@@ -46,6 +55,7 @@
     width: 50px;
     height: 55px;
     cursor: pointer;
+    z-index: 9999;
   }
   .header__icon:after {
     content: '';
@@ -142,6 +152,10 @@ transform:scale(1) !important;
 }
 #left, #right {
   display: none;
+}
+
+#swipebox-bottom-bar {
+  bottom: -50px; /*it was -50px*/
 }
 
 }

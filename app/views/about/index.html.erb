@@ -27,7 +27,7 @@
   </ul>
   <div id="bottom-domain">
     <a class="nav-links-bottom" href="/">
-      <h1 class="domain"><strong>IMAFRE.CO</strong><br><p class="te-un-do" >
+      <h1 class="domain"><strong>IMAFRE.CO</strong><br><p class="te-un-do">
         WEB DEVELOPER & HUMAN
       </p></h1>
     </a>
@@ -47,131 +47,67 @@
       </div>
     </div>
   <% end %>
-  <!-- <ul style="padding-left: 0;">
-    <li> -->
   <%= link_to '/assets/forest',class: "swipebox" do %>
-      <div class="hovereffect ld left">
+      <div class="hovereffect ld">
         <%= image_tag '/assets/forest', :class => "img-responsive" %>
         <div class="overlay-img">
           <h2>Forest</h2>
         </div>
       </div>
   <% end %>
-  <!-- </li>
-  <li> -->
+  <!-- hasta aca -->
+    <div class="hovereffect ld rightt">
+      <%= image_tag '/assets/grey', :class => "img-responsive" %>
+      <div class="overlay-img">
+        <h2 class="greeting">Hello there!</h2>
+        <h2>Vice actually freegan slow-carb fixie neutra.
+           Cliche health goth sartorial, kogi food truck
+           readymade schlitz gochujang tattooed artisan
+              banjo. Health goth kinfolk master cleanse
+              direct trade seitan chicharrones
+              liche health.
+            </h2>
+      </div>
+    </div>
+  <%= link_to '/assets/montreal',class: "swipebox" do %>
+      <div class="hovereffect ld">
+        <%= image_tag '/assets/montreal', :class => "img-responsive" %>
+        <div class="overlay-img">
+          <h2>Forest</h2>
+        </div>
+      </div>
+  <% end %>
   <%= link_to '/assets/monitos',class: "swipebox" do %>
-    <div class="hovereffect ld">
+    <div class="hovereffect ld right">
       <%= image_tag '/assets/monitos', :class => "img-responsive" %>
       <div class="overlay-img">
         <h2>Little Monkeys</h2>
       </div>
     </div>
   <% end %>
-  <!-- </li>
-  </ul> -->
-  <!-- code below works! -->
-<!-- <ul class="landing-list">
-  <li>
-    <a href="/assets/forest" class="swipebox" title="forest">
-    <img class="lad-img" src="/assets/forest" alt="image">
-    </a>
-  </li>
-  <li>
-    <a href="/assets/monitos" class="swipebox" title="monitos">
-    <img src="/assets/monitos" alt="image">
-    </a>
-  </li>
-</ul> -->
-<!-- code above works -->
-  <div class="land-text">
+  <%= link_to '/assets/montanas',class: "swipebox" do %>
+    <div class="hov">
+      <div class="hovereffect pa">
+        <%= image_tag '/assets/montanas', :class => "img-responsive" %>
+        <div class="overlay-img">
+          <h2>This is the name of the pic</h2>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <!-- <div class="land-text">
     <h2>Hello there</h2>
     <p>
-      Welcome to my ptfolio
+    Vice actually freegan slow-carb fixie neutra.
+     Cliche health goth sartorial,
+      kogi food truck readymade schlitz gochujang
+      tattooed artisan messenger bag squid ramps
+      chillwave deep v. Typewriter migas semiotics,
+       bicycle rights 8-bit tilde you probably haven't heard of them distillery banjo. Health goth kinfolk master cleanse direct trade seitan chicharrones.
     </p>
 
-  </div>
-
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />
+  </div> -->
 </div>
 
 
@@ -192,6 +128,9 @@
 <script type="text/javascript">
 // $(window).load(function(){
   $(document).ready(function() {
+    ;( function( $ ) {
+    	$( '.swipebox' ).swipebox();
+    } )( jQuery );
 
   });
 // });

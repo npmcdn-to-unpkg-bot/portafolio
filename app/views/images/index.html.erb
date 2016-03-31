@@ -17,14 +17,14 @@
     </header>
     <div class="site-content">
       <div class="container">
+<!-- <br>
+<br> -->
 
-
-
-<h1>Listing Images</h1>
+<h1 class="images-title">Listing Images</h1>
 
 <div id='masonry'>
   <% @images.each do |image| %>
-    <%= link_to image.image_url.to_s,class: "swipebox" do %>
+    <%= link_to image.image_url.to_s,class: "swipebox", title: "helo" do %>
       <div class="hov col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div class="hovereffect">
           <%= image_tag image.image_url.to_s, :class => "img-responsive" %>

@@ -27,6 +27,7 @@ li a.nav-links:focus {
   padding: 0;
   margin-right: 15%;
   text-align: right;
+  letter-spacing: 2px;
 
 }
 .nav-links h2 {
@@ -52,6 +53,7 @@ li a.nav-links:focus {
 
 .te-un-do {
   font-size: 19px;
+  color: #323333;
 }
 
 
@@ -66,12 +68,11 @@ li a.nav-links:focus {
 
 #right .ld {
   width: 50%;
-  /*width: 49.7%;*/
   margin-bottom: 5px;
 }
 
-#right .left {
-  /*margin-right: 5px !important;*/
+#right .right, .rightt {
+  left: 5px;
 }
 
 .land-text {
@@ -79,12 +80,39 @@ li a.nav-links:focus {
   height: 200px;
   background-color: #8c8c8c;
   float: left;
-    /*h2, p {
-      color: white;
-    }*/
+
+}
+
+.land-text h2, p {
+  font-family: 'Raleway', sans-serif !important;
+  color: white;
+  margin-left: 20px;
+  font-size: larger;
+  font-weight: 400 !important;
+  /*float: right;*/
+  text-align: right;
 
 }
 
 .pa {
   margin-bottom: 5px;
+}
+
+
+.hovereffect.ld.rightt .overlay-img {
+  opacity: 1;
+  background-color: rgba(0,0,0,0);
+  /*left: 5px;*/
+}
+
+.hovereffect.ld.rightt h2 {
+  text-align: right;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 400 !important;
+}
+h2.greeting  {
+  font-size: 30px;
+  margin-top: 60px;
+
 }
