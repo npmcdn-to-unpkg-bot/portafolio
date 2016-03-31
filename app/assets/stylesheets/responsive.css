@@ -33,12 +33,12 @@
     position: static;
     height: 55px;
   }
-.menu a:focus {
-  border-left: 5px solid #323333;
-}
-.nav-links {
-  .text-align: left;
-}
+  .menu a:focus {
+    border-left: 5px solid #323333;
+  }
+  .nav-links {
+    .text-align: left;
+  }
   .header__icon {
     position: relative;
     display: block;
@@ -64,8 +64,6 @@
     top: 0;
     bottom: 0;
     background-color: #f8f8f8;
-    /*    overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;*/
     width: 180px;
     -webkit-transform: translateX(-180px);
     transform: translateX(-180px);
@@ -141,6 +139,9 @@
 -ms-transform:scale(1) !important;
 -webkit-transform:scale(1) !important;
 transform:scale(1) !important;
+}
+#left, #right {
+  display: none;
 }
 
 }

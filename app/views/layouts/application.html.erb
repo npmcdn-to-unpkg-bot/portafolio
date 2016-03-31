@@ -5,6 +5,8 @@
 
 <link rel="stylesheet" href="/assets/custom.css.scss" >
 <script src="/assets/bootstrap.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/application.css" >
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/bootstrap.css" >
@@ -17,22 +19,7 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
 </head>
-<body>
-<div class="site-container">
-  <div class="site-pusher">
-    <header class="header">
-      <a href="#" class="header__icon" id="header__icon"></a>
-      <a href="/" class="header__logo">Logo</a>
-      <nav class="menu">
-        <a class="hidden-sm hidden-md hidden-lg nav-links-top" href="/">IMAFRE.CO</a>
-        <a class="nav-links" href="/about">About</a>
-        <a class="nav-links" href="/videos">Videos</a>
-        <a class="nav-links" href="/images">Images</a>
-      </nav>
-    </header>
-    <div class="site-content">
-      <div class="container">
-        <div class="log">
+<div class="log" style="display:none;">
         <% if logged_in? %>
 
         <div class="">
@@ -45,16 +32,12 @@
         </div>
         <%= link_to "Log in", login_path %>
         <% end %>
-</div>
+        </div>
 
-      </div> <!-- END container -->
+<!-- END container -->
       <%= yield %>
       <%= debug(params) if Rails.env.development? %>
 
-    </div> <!-- END site-content -->
-    <div class="site-cache" id="site-cache"></div>
-  </div> <!-- END site-pusher -->
-</div> <!-- END site-container -->
 
 <script>
 $(document).ready(function () {

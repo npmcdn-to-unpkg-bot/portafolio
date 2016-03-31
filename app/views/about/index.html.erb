@@ -1,29 +1,96 @@
-<body>
+<head>
 <link rel="stylesheet" href="/assets/about.css" media="screen" title="no title" charset="utf-8">
-<div id="left">Side menu
-<h2>about</h2>
+</head>
+<body>
+  <div class="site-container">
+    <div class="site-pusher">
+      <header class="hidden-lg hidden-md header">
+        <a href="#" class="header__icon" id="header__icon"></a>
+        <a href="/" class="header__logo">Logo</a>
+        <nav class="menu">
+          <a class="hidden-sm hidden-md hidden-lg nav-links-top" href="/">IMAFRE.CO</a>
+          <a class="nav-links" href="/about">ABOUT</a>
+          <a class="nav-links" href="/videos">VIDEOS</a>
+          <a class="nav-links" href="/images">IMAGES</a>
+          <a class="nav-links" href="/images">WORK</a>
+        </nav>
+      </header>
+      <div class="site-content">
+        <div class="container">
+
+<div id="left">
+  <ul class="landing-menu">
+    <li><a class="nav-links" href="/about"><h2>ABOUT</h2></a></li>
+    <li><a class="nav-links" href="/videos"><h2>VIDEOS</h2></a></li>
+    <li><a class="nav-links" href="/images"><h2>IMAGES</h2></a></li>
+    <li><a class="nav-links" href="/images"><h2>WORK</h2></a></li>
+  </ul>
+  <div id="bottom-domain">
+    <a class="nav-links-bottom" href="/">
+      <h1 class="domain"><strong>IMAFRE.CO</strong><br><p class="te-un-do" >
+        WEB DEVELOPER & HUMAN
+      </p></h1>
+    </a>
+  </div>
+
+
+
 </div>
-<div id="right">Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
-    <br />Scroll
+<div id="right">
+  <%= link_to '/assets/panoramic2',class: "swipebox" do %>
+    <div class="hov">
+      <div class="hovereffect pa">
+        <%= image_tag '/assets/panoramic2', :class => "img-responsive" %>
+        <div class="overlay-img">
+          <h2>This is the name of the pic</h2>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <!-- <ul style="padding-left: 0;">
+    <li> -->
+  <%= link_to '/assets/forest',class: "swipebox" do %>
+      <div class="hovereffect ld left">
+        <%= image_tag '/assets/forest', :class => "img-responsive" %>
+        <div class="overlay-img">
+          <h2>Forest</h2>
+        </div>
+      </div>
+  <% end %>
+  <!-- </li>
+  <li> -->
+  <%= link_to '/assets/monitos',class: "swipebox" do %>
+    <div class="hovereffect ld">
+      <%= image_tag '/assets/monitos', :class => "img-responsive" %>
+      <div class="overlay-img">
+        <h2>Little Monkeys</h2>
+      </div>
+    </div>
+  <% end %>
+  <!-- </li>
+  </ul> -->
+  <!-- code below works! -->
+<!-- <ul class="landing-list">
+  <li>
+    <a href="/assets/forest" class="swipebox" title="forest">
+    <img class="lad-img" src="/assets/forest" alt="image">
+    </a>
+  </li>
+  <li>
+    <a href="/assets/monitos" class="swipebox" title="monitos">
+    <img src="/assets/monitos" alt="image">
+    </a>
+  </li>
+</ul> -->
+<!-- code above works -->
+  <div class="land-text">
+    <h2>Hello there</h2>
+    <p>
+      Welcome to my ptfolio
+    </p>
+
+  </div>
+
     <br />Scroll
     <br />Scroll
     <br />Scroll
@@ -106,6 +173,20 @@
     <br />Scroll
     <br />
 </div>
+
+
+<div class="content-responsive">
+<h2>hello</h2>
+</div>
+
+</div> <!-- END container -->
+
+
+
+</div> <!-- END site-content -->
+<div class="site-cache" id="site-cache"></div>
+</div> <!-- END site-pusher -->
+</div> <!-- END site-container -->
 </body>
 
 <script type="text/javascript">
