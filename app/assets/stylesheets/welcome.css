@@ -72,7 +72,7 @@ li a.nav-links:focus {
 
 .land-text {
   width: 100%;
-  height: 180px;
+  height: 150px;
   background-color: #79a7bb;
   float: left;
 
@@ -84,9 +84,14 @@ li a.nav-links:focus {
   margin-left: 20px;
   font-size: larger;
   font-weight: 400 !important;
-  /*float: right;*/
+  margin-right: 20px;
   text-align: center;
 
+}
+.land-text h2 {
+font-size: 30px;
+text-decoration: underline;
+margin-bottom: 10px;
 }
 
 .pa {
