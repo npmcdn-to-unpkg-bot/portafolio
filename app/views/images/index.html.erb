@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" href="/assets/images.css" >
+<title>ANDRES|IMAGES</title>
 </head>
 <body>
 <div class="site-container">
@@ -32,7 +33,7 @@
 </div>
 <div id='masonry'>
   <% @images.each do |image| %>
-    <%= link_to image.image_url.to_s,class: "swipebox", title: "helo" do %>
+    <%= link_to image.image_url.to_s,class: "swipebox" do %>
       <div class="hov col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div class="hovereffect">
           <%= image_tag image.image_url.to_s, :class => "img-responsive" %>
