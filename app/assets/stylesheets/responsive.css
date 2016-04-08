@@ -604,5 +604,7 @@ font-size: smaller;
 .header__logo {
   display: none;
 }
+.wks .thumb p {
+  margin-left: 8px;
 
 }
