@@ -123,9 +123,9 @@ h2.greeting  {
 }
 
 .te-un-do {
-  font-size: 19px;
+  font-size: 17px;
   color: #323333;
-  /*margin-left: 0px;*/
+  margin-right: 0px;
   padding-right: 0px;
   /*text-align: right !important;*/
 }
