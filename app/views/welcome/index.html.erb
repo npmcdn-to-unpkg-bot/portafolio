@@ -11,24 +11,31 @@
     <div class="site-pusher">
       <header class="hidden-lg hidden-md header" style="height: 0px;">
         <a href="#" class="header__icon" id="header__icon"></a>
-        <a href="/" class="header__logo">Logo</a>
+        <!-- <a href="/" class="header__logo">Logo</a> -->
         <nav class="menu">
-          <a class="hidden-sm hidden-md hidden-lg nav-links-top" href="/">IMAFRE.CO</a>
+          <a class="hidden-sm hidden-md hidden-lg nav-links-top" href="/"></a>
           <a class="nav-links" href="/about">ABOUT</a>
           <a class="nav-links" href="/videos">VIDEOS</a>
           <a class="nav-links" href="/images">IMAGES</a>
-          <a class="nav-links" href="/images">WORK</a>
+          <a class="nav-links" href="/work">WORK</a>
+          <div id="bottom-domain" class="hidden-sm hidden-md hidden-lg">
+            <a class="nav-links-bottom" href="/">
+              <h1 class="domain"><strong>IMAFRE.CO</strong><p class="te-un-do">
+                WEB DEVELOPER & HUMAN
+              </p></h1>
+            </a>
+          </div>
         </nav>
       </header>
       <div class="site-content">
-        <div class="container">
+        <div class="container" style="margin:0;">
 
 <div id="left">
   <ul class="landing-menu">
     <li><a class="nav-links" href="/about"><h2>ABOUT</h2></a></li>
     <li><a class="nav-links" href="/videos"><h2>VIDEOS</h2></a></li>
     <li><a class="nav-links" href="/images"><h2>IMAGES</h2></a></li>
-    <li><a class="nav-links" href="/images"><h2>WORK</h2></a></li>
+    <li><a class="nav-links" href="/work"><h2>WORK</h2></a></li>
   </ul>
   <div id="bottom-domain">
     <a class="nav-links-bottom" href="/">
@@ -64,14 +71,7 @@
       <div class="hovereffect ld intro">
         <%= image_tag '/assets/forest', :class => "img-responsive" %>
         <div class="overlay-img">
-          <h2 class="greeting">Hello there!</h2>
-          <h2>Vice actually freegan slow-carb fixie neutra.
-             Cliche health goth sartorial, kogi food truck
-             readymade schlitz gochujang tattooed artisan
-                banjo. Health goth kinfolk master cleanse
-                direct trade seitan chicharrones
-                liche health.
-              </h2>
+          <h2 class="greeting">Forest</h2>
         </div>
       </div>
   <% end %>
@@ -80,7 +80,7 @@
       <div class="hovereffect ld">
         <%= image_tag '/assets/montreal', :class => "img-responsive" %>
         <div class="overlay-img">
-          <h2>Forest</h2>
+          <h2>Montreal</h2>
         </div>
       </div>
   <% end %>
@@ -92,29 +92,20 @@
       </div>
     </div>
   <% end %>
-  <%= link_to '/assets/montanas',class: "swipebox" do %>
-    <div class="hov">
-      <div class="hovereffect pa">
-        <%= image_tag '/assets/montanas', :class => "img-responsive" %>
-        <div class="overlay-img">
-          <h2>This is the name of the pic</h2>
-        </div>
-      </div>
-    </div>
-  <% end %>
 
-  <!-- <div class="land-text">
-    <h2>Hello there</h2>
+  <div class="land-text">
+    <h2>HOLA</h2>
     <p>
-    Vice actually freegan slow-carb fixie neutra.
-     Cliche health goth sartorial,
-      kogi food truck readymade schlitz gochujang
-      tattooed artisan messenger bag squid ramps
-      chillwave deep v. Typewriter migas semiotics,
-       bicycle rights 8-bit tilde you probably haven't heard of them distillery banjo. Health goth kinfolk master cleanse direct trade seitan chicharrones.
-    </p>
+    Welcome to my portfolio and thank you for dropping by.
+    Here you will find most of my work, cool pictures taken with my Nikon D5100 or with my Miniquad(Drone)
+    and some YouTube videos I find worth sharing. Head over <a href="/about">ABOUT</a> to know me better and get in touch.
 
-  </div> -->
+  </div>
+  <footer class="footer">
+    <p>
+      © 2016 Andres Rojas, unless otherwise noted.
+    </p>
+  </footer>
 </div>
 
 
@@ -131,25 +122,24 @@
   <div class="block" style="height: 100%;">
     <div class="centered">
       <div class="wl-te">
-        <h2>Hello</h2>
+        <h2>HOLA</h2>
       <p>
-        Vice actually freegan slow-carb fixie neutra.
-         Cliche health goth sartorial,
-          kogi food truck readymade schlitz gochujang
-          tattooed artisan messenger bag squid ramps
-          chillwave deep v. Typewriter migas semiotics,
+        Welcome to my portfolio and thank you for dropping by.
+        Here you will find most of my work, cool pictures taken with my Nikon D5100 or with my Miniquad(Drone)
+        and some YouTube videos I find worth sharing. Head over ABOUT to know me better and get in touch.
+
 </p>
+<div class="wl-contact">
+<a href="/about"><h5>ABOUT</h5></a>
+</div>
     </div>
     <div id="bottom-domain">
-    <i class="fa fa-angle-left"></i>
-    <i class="fa fa-angle-right"></i>
+    <i class="fa fa-angle-left"></i><i class="fa fa-angle-right"></i>
+
     </div>
 </div>
 </div>
-<!-- <div class="arrows">
-<i class="fa fa-angle-right"></i>
-<i class="fa fa-angle-left"></i>
-</div> -->
+
 
 </div> <!-- END site-content -->
 <div class="site-cache" id="site-cache"></div>

@@ -51,11 +51,6 @@ li a.nav-links:focus {
   color: #323333;
 }
 
-.te-un-do {
-  font-size: 19px;
-  color: #323333;
-}
-
 
 .landing-list {
   padding: 0px;
@@ -77,20 +72,20 @@ li a.nav-links:focus {
 
 .land-text {
   width: 100%;
-  height: 200px;
-  background-color: #8c8c8c;
+  height: 180px;
+  background-color: #79a7bb;
   float: left;
 
 }
 
 .land-text h2, p {
   font-family: 'Raleway', sans-serif !important;
-  color: white;
+  color: black;
   margin-left: 20px;
   font-size: larger;
   font-weight: 400 !important;
   /*float: right;*/
-  text-align: right;
+  text-align: center;
 
 }
 
@@ -111,6 +106,7 @@ li a.nav-links:focus {
   margin-right: 40px;
   font-weight: 400 !important;
 }
+
 h2.greeting  {
   font-size: 30px;
   margin-top: 60px;
@@ -119,4 +115,17 @@ h2.greeting  {
 
 .hovereffect.ld.intro .overlay-img{
   background-color: rgba(0,0,0,0.8);
+}
+
+.te-un-do {
+  font-size: 19px;
+  color: #323333;
+  /*margin-left: 0px;*/
+  padding-right: 0px;
+  /*text-align: right !important;*/
+}
+
+.land-text a {
+  color: black;
+  text-decoration: underline;
 }
