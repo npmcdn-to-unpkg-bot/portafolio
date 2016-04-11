@@ -112,12 +112,12 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-top-bar {
-  top: -50px;
+  top: 0px;  /*it was -50px*/
 }
-#swipebox-top-bar.visible-bars {
+/*#swipebox-top-bar.visible-bars {
   -webkit-transform: translate3d(0, 50px, 0);
           transform: translate3d(0, 50px, 0);
-}
+}*/
 
 #swipebox-title {
   display: block;

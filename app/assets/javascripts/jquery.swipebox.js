@@ -178,7 +178,7 @@
 				}
 
 				if ( isMobile && plugin.settings.removeBarsOnMobile ) {
-					$( '#swipebox-bottom-bar, #swipebox-top-bar' ).remove();
+					$( '#swipebox-bottom-bar' ).remove();// it had , #swipebox-top-bar next to it
 				}
 
 				$.each( elements,  function() {
@@ -748,7 +748,7 @@
 				if ( a.search ) {
 					qs = JSON.parse( '{"' + a.search.toLowerCase().replace('?','').replace(/&/g,'","').replace(/=/g,'":"') + '"}' );
 				}
-				
+
 				// Extend with custom data
 				if ( $.isPlainObject( customData ) ) {
 					qs = $.extend( qs, customData, plugin.settings.queryStringData ); // The dev has always the final word
