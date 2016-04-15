@@ -23,13 +23,13 @@ li {
 /*.ytp-icon .ytp-icon-large-play-button {
   display: none;
 }*/
-.videos {
+/*.videos {
   -webkit-animation: fadein 2s !important;
   -moz-animation: fadein 2s !important;
   -ms-animation: fadein 2s !important;
   -o-animation: fadein 2s !important;
   animation: fadein 2s !important;
- }
+ }*/
 
  .te-un-do {
    font-size: 10px;
