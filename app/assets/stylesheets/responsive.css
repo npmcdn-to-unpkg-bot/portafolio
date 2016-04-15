@@ -225,11 +225,11 @@ h1.domain {
     padding-right: 20px;
 }
 .te-un-do {
-    font-size: 10px;
+    font-size: 6px;
     color: #323333;
     width: 170px;
     text-align: right !important;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 }
 
 nav.menu #bottom-domain {
@@ -253,11 +253,12 @@ nav.menu #bottom-domain {
 }
 
 .te-un-do {
-    font-size: 10px !important;
+    font-size: 7px !important;
     color: #323333;
     width: 170px;
     text-align: right !important;
-    padding-right: 20px !important;
+    letter-spacing: 1px !important;
+    /*padding-right: 20px !important;*/
 }
 
 .ab-div {
