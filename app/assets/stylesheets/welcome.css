@@ -80,14 +80,13 @@ li a.nav-links:focus {
 
 .land-text h2, p {
   font-family: 'Raleway', sans-serif !important;
-  color: #f8f8f8;
+  color: #323333;
   margin-left: 20px;
   font-size: larger;
   font-weight: 400 !important;
   margin-right: 20px;
   text-align: left;
-  letter-spacing: 3px;
-
+  /*letter-spacing: 3px;*/
 }
 .land-text h2 {
 font-size: 30px;
@@ -128,7 +127,7 @@ h2.greeting  {
 
 .te-un-do {
   width: 100%;
-  font-size: 13px;
+  font-size: 18px;
   color: #323333;
   margin-right: 0px;
   padding-right: 0px;
@@ -138,4 +137,13 @@ h2.greeting  {
 .land-text a {
   color: #f8f8f8;
   text-decoration: underline;
+}
+
+.wl p {
+  color: #f8f8f8;
+  letter-spacing: 3px;
+}
+.wl h2 {
+  color: #f8f8f8;
+
 }
