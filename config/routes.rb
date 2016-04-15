@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :users
-  resources :gifs
+  # resources :gifs
   resources :images
   resources :videos
   get    'login'   => 'sessions#new'
