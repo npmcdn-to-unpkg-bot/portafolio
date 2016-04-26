@@ -8,6 +8,11 @@ class VideosController < ApplicationController
     @videos = Video.all
   end
 
+
+  def funny
+    @videos = Video.where(category: "funny")
+  end
+
   # GET /videos/1
   # GET /videos/1.json
   def show
@@ -29,7 +34,7 @@ class VideosController < ApplicationController
 
     respond_to do |format|
       if @video.save
-        format.html { redirect_to @video, notice: 'Video was successfully created.' }
+        format.html { redirect_to videos_path, notice: 'Video was successfully created.' }
         format.json { render :show, status: :created, location: @video }
       else
         format.html { render :new }
@@ -43,7 +48,7 @@ class VideosController < ApplicationController
   def update
     respond_to do |format|
       if @video.update(video_params)
-        format.html { redirect_to @video, notice: 'Video was successfully updated.' }
+        format.html { redirect_to videos_path, notice: 'Video was successfully updated.' }
         format.json { render :show, status: :ok, location: @video }
       else
         format.html { render :edit }
@@ -70,6 +75,6 @@ class VideosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
-      params.require(:video).permit(:name, :url)
+      params.require(:video).permit(:name, :url, :category)
     end
 end

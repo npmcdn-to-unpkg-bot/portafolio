@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :users
   # resources :gifs
   resources :images
-  resources :videos
+  resources :videos, except: :show
+  get 'videos/funny' => 'videos#funny'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
