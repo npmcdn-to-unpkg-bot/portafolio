@@ -13,6 +13,25 @@ class VideosController < ApplicationController
     @videos = Video.where(category: "funny")
   end
 
+  def cool
+    @videos = Video.where(category: "cool")
+  end
+
+  def nature
+    @videos = Video.where(category: "nature")
+  end
+
+  def art
+    @videos = Video.where(category: "art")
+  end
+
+  def music
+    @videos = Video.where(category: "music")
+  end
+
+  def science
+    @videos = Video.where(category: "science")
+  end
   # GET /videos/1
   # GET /videos/1.json
   def show
