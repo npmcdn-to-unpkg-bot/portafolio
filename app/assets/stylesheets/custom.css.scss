@@ -42,3 +42,15 @@ input {
   margin-right: auto;
   margin-left: auto;
 }
+
+.menu a:hover {
+  background-color: #f8f8f8;
+}
+
+.header a:hover {
+  background-color: #f8f8f8;
+}
+
+a:hover {
+  background-color: #f8f8f8 !important;
+}

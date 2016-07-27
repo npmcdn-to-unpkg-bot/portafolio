@@ -6,6 +6,6 @@ CarrierWave.configure do |config|
     :aws_access_key_id      => ENV['ACCESS_KEY'], # required
     :aws_secret_access_key  => ENV['SECRET_KEY'] # required
   }
-  config.fog_directory  = 'ptfolio'                     # required
+  config.fog_directory  = 'trate'                     # required
 #was ptfolio #trate
 end
