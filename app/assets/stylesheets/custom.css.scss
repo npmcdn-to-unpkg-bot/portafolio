@@ -47,14 +47,10 @@ input {
   background-color: #f8f8f8;
 }
 
-.header a:hover {
-  background-color: #f8f8f8;
+#swipebox-overlay a:hover {
+  background-color: black !important;
 }
 
 a:hover {
-  background-color: #f8f8f8 !important;
-}
-
-#swipebox-overlay a:hover {
-  background-color: black !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }

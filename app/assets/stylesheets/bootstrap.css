@@ -6789,7 +6789,7 @@ button.close {
   margin-right: 5%;
 }
 .nav > li > a:hover {
-  background-color: #f8f8f8 !important;
+  /*background-color: #f8f8f8 !important;*/
 
 }
 .nav > li > a:focus {
