@@ -17,3 +17,8 @@
 //= require bootstrap
 //require turbolinks
 //= require_tree .
+// $(document).ready(function() {
+//   ( function( $ ) {
+//     $(".se-pre-con").fadeOut("slow");;
+//     $( '.swipebox' ).swipebox();
+//   } )( jQuery );

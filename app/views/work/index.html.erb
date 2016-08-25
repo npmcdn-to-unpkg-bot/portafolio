@@ -93,3 +93,17 @@
 </div> <!-- END site-pusher -->
 </div> <!-- END site-container -->
 </body>
+<div class="se-pre-con"></div>
+<script type="text/javascript">
+  $(function(){
+    $(".se-pre-con").fadeOut("slow");
+    $('#maximage').maximage({
+            cycleOptions: {
+              prev: '.fa-angle-left',
+              next: '.fa-angle-right',
+              speed: 3000,
+              timeout: 6000
+            }
+        });
+  });
+</script>

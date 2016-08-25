@@ -70,12 +70,20 @@ var masonry = function () {
 $(window).load(function(){
   $(document).ready(function() {
     masonry();
+    $(".se-pre-con").fadeOut("slow");
+    $('#maximage').maximage({
+            cycleOptions: {
+              prev: '.fa-angle-left',
+              next: '.fa-angle-right',
+              speed: 3000,
+              timeout: 6000
+            }
+        });
   });
 });
 ;( function( $ ) {
 	$( '.swipebox' ).swipebox();
 } )( jQuery );
 </script>
-
-
 </body>
+<div class="se-pre-con"></div>
