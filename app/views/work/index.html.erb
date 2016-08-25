@@ -95,15 +95,27 @@
 </body>
 <div class="se-pre-con"></div>
 <script type="text/javascript">
-  $(function(){
-    $(".se-pre-con").fadeOut("slow");
-    $('#maximage').maximage({
-            cycleOptions: {
-              prev: '.fa-angle-left',
-              next: '.fa-angle-right',
-              speed: 3000,
-              timeout: 6000
-            }
-        });
+$(function(){
+  $(".se-pre-con").fadeOut("slow");
+//     $('#maximage').maximage({
+//           cycleOptions: {
+//             prev: '.fa-angle-left',
+//             next: '.fa-angle-right',
+//             speed: 3000,
+//             timeout: 6000
+//           }
+// });
+});
+  $(document).ready(function() {
+    ( function( $ ) {
+      // $(".se-pre-con").fadeOut("slow");;
+    	$( '.swipebox' ).swipebox();
+    } )( jQuery );
+
+
   });
+  // $(window).load(function() {
+  // 		// Animate loader off screen
+  // 		$(".se-pre-con").fadeOut("slow");;
+  // 	});
 </script>
