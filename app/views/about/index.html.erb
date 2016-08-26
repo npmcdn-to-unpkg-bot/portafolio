@@ -35,7 +35,7 @@
               <div class="ab-txt">
                 <h2>MY NAME IS ANDRES</h2>
                 <p>
-                   and I like to code. I'm a web developer and designer
+                   and I like to code. I'm a web developer
                    based in Miami who has a hobby as career.
                    I enjoy art and music, they are part of who I am and how I feel about the world
                    we live in. Seeing the world from different angles makes me
@@ -64,11 +64,14 @@ $(function(){
   //     });
 });
       function initMap() {
+
         var myLatLng = {lat: 26.2417757, lng: -37.9490358};
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
-          center: myLatLng
+          center: myLatLng,
+          maxZoom : 2,
+          minZoom : 2
         });
 
         var malaga = new google.maps.Marker({
@@ -153,7 +156,6 @@ $(function(){
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHfPOaGklfRv0oKg_ATiq4ZrvCpAp5mNA&callback=initMap" async defer> </script>
 <div class="line bt"></div>
 <div id="map"></div>
-
 <div class="line bt"></div>
 <div class="social">
   <h2>LET'S WORK TOGETHER</h2>
